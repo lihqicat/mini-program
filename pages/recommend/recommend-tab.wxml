@@ -1,0 +1,41 @@
+<view class="recommend-tab">
+  <view class="recommend-panel">
+    <view class="top-title">
+      <!-- <image></image> -->
+      <text>推荐歌单</text>
+      <view class="placeholder"></view>
+    </view>
+    <view class="card-list">
+      <navigator class="card" wx:for="{{playlist}}" url="/plays/playlist/index?playlistId={{item.id}}">
+        <playlist-card playList="{{item}}"></playlist-card>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="recommend-panel">
+    <view class="top-title">
+      <!-- <image></image> -->
+      <text>最新音乐</text>
+      <view class="placeholder"></view>
+    </view>
+    <view class="card-list"></view>
+  </view>
+
+  <view class="recommend-panel">
+    <view class="top-title">
+      <!-- <image></image> -->
+      <text>推荐MV</text>
+      <view class="placeholder"></view>
+    </view>
+    <view class="card-list"></view>
+  </view>
+
+  <view class="recommend-panel">
+    <view class="top-title">
+      <!-- <image></image> -->
+      <text>主播电台</text>
+      <view class="placeholder"></view>
+    </view>
+    <view class="card-list"></view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+
+<view class="navigation-view">
+  <view class="navigation-tab" wx:for="{{tabList}}"  wx:key="{{item.id}}">
+     <view class="tab-item {{activeTableId === item.id?'tab-active':''}}" bindtap="onClickTab" data-id="{{item.id}}">{{item.title}}</view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "playlist-card":"../comppnents/playlist-card/playlist-card"
+  }
+}

@@ -1,0 +1,18 @@
+/* pages/navigation-tab/navigation-tab.wxss */
+.navigation-view{
+  display: flex;
+  align-items: center;
+}
+
+.navigation-tab{
+  flex:1;
+  text-align:center;
+  padding: 8px 0px;
+}
+
+.tab-active{
+  border-bottom: 1px solid green;
+}
+.tab-item{
+  padding: 8px 0px;
+}

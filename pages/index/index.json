@@ -1,0 +1,7 @@
+{
+  "navigationBarTitle":"首页",
+  "usingComponents": {
+    "navigationTab":"../navigation-tab/navigation-tab",
+    "recommend":"../recommend/recommend-tab"
+  }
+}

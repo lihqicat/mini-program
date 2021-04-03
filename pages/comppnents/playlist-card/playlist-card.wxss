@@ -1,0 +1,15 @@
+/* pages/comppnents/playlist-card/playlist-card.wxss */
+.cover-img{
+  background-size: 100% 100%;
+  width:100%;
+  height: 98px;
+}
+.card{
+  /* height: 88px; */
+}
+
+.top-right-title{
+  font-size: 12px;
+  color:#c5c5c5;
+  padding-bottom: 4px;
+}

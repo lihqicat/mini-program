@@ -1,0 +1,9 @@
+<!--pages/comppnents/playlist-card/playlist-card.wxml-->
+<view class="card">
+   <view class="square">
+     <image src="{{playList.picUrl || playList.coverImgUrl}}?param=200y200" class="cover-img"></image>
+     <view class="top-right-title">
+      {{playList.name}}
+     </view>
+   </view>
+</view>

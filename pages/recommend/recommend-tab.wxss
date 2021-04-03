@@ -1,0 +1,13 @@
+/* pages/recommend/recommend-tab.js.wxss */
+.card-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 8px;
+
+}
+.card{
+  flex: 1;
+  min-width: 30%;
+  padding:0px 2px;
+}
