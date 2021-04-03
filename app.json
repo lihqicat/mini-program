@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/navigation-tab/navigation-tab"
+    "pages/navigation-tab/navigation-tab",
+    "pages/playlist/playlist"
   ],
   "window": {
     "backgroundTextStyle": "light",

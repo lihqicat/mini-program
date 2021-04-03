@@ -26,7 +26,9 @@
   <view class="content recommend-tab" hidden="{{currentTableId !== 'recommend'}}">
     <recommend ></recommend>
   </view>
-  <view class="content playlist-tab" hidden="{{currentTableId !== 'playlist'}}">2</view>
+  <view class="content playlist-tab" hidden="{{currentTableId !== 'playlist'}}">
+    <playlist></playlist>
+  </view>
   <view class="content radio-tab" hidden="{{currentTableId !== 'radio'}}">3</view>
   <view class="content ranking-tab" hidden="{{currentTableId !== 'ranking'}}">4</view>
 </view>
