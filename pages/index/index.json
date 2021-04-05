@@ -4,6 +4,7 @@
     "navigationTab":"../navigation-tab/navigation-tab",
     "recommend":"../recommend/recommend-tab",
     "playlist":"../playlist/playlist",
-    "mp-loading": "weui-miniprogram/loading/loading"
+    "radioTab":"../radio-tab/radio-tab",
+    "rankTab":"../rank-tab/rank-tab"
   }
 }

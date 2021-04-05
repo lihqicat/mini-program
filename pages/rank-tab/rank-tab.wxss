@@ -1,0 +1,23 @@
+/* pages/rank-tab/rank-tab.wxss */
+.rank-view{
+  display: flex;
+}
+.rank-view image{
+  width:108px;
+  height: 108px;
+}
+.rank-track{
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  font-size: 12px;
+  align-items: center;
+}
+
+.item-text {
+  display: inline-block;
+  white-space: nowrap;
+  width: calc(100vw - 120px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

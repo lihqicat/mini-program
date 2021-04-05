@@ -1,0 +1,31 @@
+/* pages/radio-tab/radio-tab.js.wxss */
+.programs-item {
+  display: flex;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.item-img {
+  width: 64px;
+  height: 64px;
+}
+
+.item-info {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 0px;
+}
+
+.item-text {
+  display: inline-block;
+  white-space: nowrap;
+  width: calc(100vw - 86px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-reason {
+  color: #c5c5c5
+}

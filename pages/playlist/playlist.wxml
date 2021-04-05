@@ -8,8 +8,7 @@
       </view>
     </view>
     <view class="load-view" hidden="{{!loading}}">
-    <mp-loading ext-class="demo0" type="dot-gray" show="true" animated="true"></mp-loading>
-  </view>
+      <mp-loading ext-class="demo0" type="dot-gray" show="true" animated="true"></mp-loading>
+    </view>
   </scroll-view>
-
 </view>

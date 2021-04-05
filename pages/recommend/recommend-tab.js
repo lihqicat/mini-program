@@ -1,5 +1,5 @@
 // pages/recommend/recommend-tab.js.js
-const req= require('../service/index')
+const service= require('../service/index')
 Component({
   /**
    * 组件的属性列表
@@ -25,8 +25,8 @@ Component({
   methods: {
     async initData(){
       try{
-        const res = await req.getRecommendPlaylist();
-        const newSong = await req.getRecommendNewsong();
+        const res = await service.getRecommendPlaylist();
+        const newSong = await service.getRecommendNewsong();
         this.setData({
           loading:false,
           playlist:res.data.result,

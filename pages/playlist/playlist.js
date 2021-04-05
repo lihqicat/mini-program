@@ -1,4 +1,4 @@
-const req = require('../service/index');
+const service = require('../service/index');
 const LIMIT = 10;
 // pages/playlist/playlist.js
 Component({
@@ -24,7 +24,7 @@ Component({
           offset,
           playlists
         } = this.data;
-        const res = await req.getPlaylistByCategory(selectedCategory, offset, LIMIT);
+        const res = await service.getPlaylistByCategory(selectedCategory, offset, LIMIT);
         if (res.data && res.data.playlists) {
           res.data.playlists = playlists.concat(res.data.playlists);
         }

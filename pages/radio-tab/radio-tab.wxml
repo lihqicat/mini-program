@@ -1,0 +1,12 @@
+
+<view wx:for="{{programs}}">
+  <view class="programs-item" bindtap="onClickProgram">
+     <view>
+       <image class="item-img" src="{{item.coverUrl}}"></image>
+     </view>
+     <view class="item-info">
+       <view class="item-name item-text">{{item.name}}</view>
+       <view class="item-reason item-text">{{item.reason}}</view>
+      </view>
+  </view>
+</view>

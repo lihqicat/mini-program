@@ -1,0 +1,14 @@
+<!--pages/rank-tab/rank-tab.wxml-->
+<navigator wx:for="{{netmusicList}}" wx:for-item="ranking" wx:key="index"
+  url="/pages/playlist/index?playlistId={{ranking.id}}">
+  <view class="rank-view">
+    <image src="{{ranking.coverImgUrl}}"></image>
+    <view class="rank-track">
+      <view wx:for="{{ranking.tracks}}"> 
+        <text class="item-text">{{item.first}}</text>
+      </view>
+
+    </view>
+  </view>
+
+</navigator>
