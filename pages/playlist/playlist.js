@@ -1,66 +1,52 @@
+const req = require('../service/index');
+const LIMIT = 10;
 // pages/playlist/playlist.js
-Page({
+Component({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    hasMore: true,
+    playlists: [],
+    offset: 0,
+    selectedCategory: '全部歌单',
+    loading: true
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  // 组件方法列表
+  methods: {
+    async getData() {
+      try {
+        this.setData({loading:true})
+        const {
+          selectedCategory,
+          offset,
+          playlists
+        } = this.data;
+        const res = await req.getPlaylistByCategory(selectedCategory, offset, LIMIT);
+        if (res.data && res.data.playlists) {
+          res.data.playlists = playlists.concat(res.data.playlists);
+        }
+        this.setData({
+          playlists: res.data.playlists,
+          offset: offset + LIMIT,
+          loading: false
+        });
+      } catch (error) {
+        this.setData({
+          loading: false
+        });
+        console.log('数据加载失败')
+      }
+    },
+    onReachBtn() {
+      this.getData();
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  lifetimes: {
+    attached: function () {
+      this.getData();
+    },
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

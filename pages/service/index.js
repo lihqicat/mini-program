@@ -20,7 +20,7 @@ export function getRecommendPlaylist() {
 export function getRecommendNewsong() {
   return new Promise((resolve, reject) => {
     wx.request({
-      url: `${BASE_URL}top/playlist`,
+      url: `${BASE_URL}personalized/newsong`,
       data: {
         cookie: ''
       },
@@ -37,7 +37,7 @@ export function getRecommendNewsong() {
 export function getPlaylistByCategory(category, offset, limit) {
   return new Promise((resolve, reject) => {
     wx.request({
-      url: `${BASE_URL}personalized/newsong`,
+      url: `${BASE_URL}top/playlist`,
       data: {
         type: category,//歌单分类
         offset, //列表偏移量
@@ -48,6 +48,18 @@ export function getPlaylistByCategory(category, offset, limit) {
       },
       error: function (err) {
         reject(err)
+      }
+    })
+  })
+}
+
+export function getPlaylistBcatList(){
+  return new Promise((resolve, reject) => {
+    wx.request({
+      url: `${BASE_URL}personalized/newsong`,
+      data: {},
+      success(res){
+        resolve(res.data);
       }
     })
   })

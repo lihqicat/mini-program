@@ -27,8 +27,6 @@ Component({
       try{
         const res = await req.getRecommendPlaylist();
         const newSong = await req.getRecommendNewsong();
-        console.log(newSong)
-        console.log(res)
         this.setData({
           loading:false,
           playlist:res.data.result,

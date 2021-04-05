@@ -3,6 +3,7 @@
   "usingComponents": {
     "navigationTab":"../navigation-tab/navigation-tab",
     "recommend":"../recommend/recommend-tab",
-    "playlist":"../playlist/playlist"
+    "playlist":"../playlist/playlist",
+    "mp-loading": "weui-miniprogram/loading/loading"
   }
 }

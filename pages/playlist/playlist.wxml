@@ -1,2 +1,15 @@
 <!--pages/playlist/playlist.wxml-->
-<text>pages/playlist/playlist.wxml</text>
+<view>
+  <scroll-view bindscrolltolower="onReachBtn" scroll-y="true">
+    <view class="playlists">
+      <view class="playlist-panel" wx:for="{{playlists}}" wx:for-item="playlist" wx:key="index">
+        <image class="img" src="{{playlist.coverImgUrl}}"></image>
+        <view>{{playlist.name}}</view>
+      </view>
+    </view>
+    <view class="load-view" hidden="{{!loading}}">
+    <mp-loading ext-class="demo0" type="dot-gray" show="true" animated="true"></mp-loading>
+  </view>
+  </scroll-view>
+
+</view>

@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "component": true,
+  "usingComponents": {
+    "loading-panel":"../comppnents/loading/loading-panel",
+    "mp-loading":"weui-miniprogram/loading/loading"
+  }
 }

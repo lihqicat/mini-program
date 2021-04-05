@@ -2,8 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/navigation-tab/navigation-tab",
-    "pages/playlist/playlist"
+    "pages/navigation-tab/navigation-tab"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,5 +11,8 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
 }
